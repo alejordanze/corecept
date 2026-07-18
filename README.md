@@ -1,0 +1,20 @@
+# Concepts Review
+
+An interactive Vite + React study app for reviewing JavaScript, TypeScript,
+design, and architecture concepts.
+
+## Development
+
+```sh
+npm install
+npm run dev
+```
+
+`npm run build` runs the TypeScript check and creates the production bundle.
+
+## Included sections
+
+- Basic and advanced JavaScript/TypeScript concepts
+- Maintainability principles and common design patterns
+- Architecture patterns
+- Editable exercises with JavaScript and TypeScript execution
