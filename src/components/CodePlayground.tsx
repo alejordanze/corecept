@@ -31,9 +31,11 @@ export function CodePlayground({ initialCode, language, hint }: CodePlaygroundPr
 
   const handleRun = useCallback(async () => {
     setRunning(true)
-    const r = await runCode(code, language)
-    setResult(r)
-    setRunning(false)
+    try {
+      setResult(await runCode(code, language))
+    } finally {
+      setRunning(false)
+    }
   }, [code, language])
 
   const handleReset = useCallback(() => {
