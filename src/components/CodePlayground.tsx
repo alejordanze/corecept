@@ -52,12 +52,14 @@ export function CodePlayground({ initialCode, language, hint }: CodePlaygroundPr
         </div>
         <div className="flex items-center gap-2">
           <button
+            type="button"
             onClick={handleReset}
             className="rounded-md border border-slate-700 px-3 py-1 text-xs text-slate-300 hover:bg-slate-800"
           >
             Reset
           </button>
           <button
+            type="button"
             onClick={handleRun}
             disabled={running}
             className="rounded-md bg-emerald-500 px-3 py-1 text-xs font-semibold text-slate-950 hover:bg-emerald-400 disabled:opacity-60"
@@ -95,7 +97,7 @@ export function CodePlayground({ initialCode, language, hint }: CodePlaygroundPr
         </Suspense>
       </div>
 
-      <div className="border-t border-slate-800 bg-slate-950/60 px-4 py-3 text-sm">
+      <div aria-live="polite" className="border-t border-slate-800 bg-slate-950/60 px-4 py-3 text-sm">
         <div className="mb-2 flex items-center justify-between">
           <span className="text-xs uppercase text-slate-500">Output</span>
           {result && (
