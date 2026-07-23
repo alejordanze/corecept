@@ -104,7 +104,7 @@ function StudyList({
       <ul className="mt-3 space-y-2 text-sm leading-relaxed text-slate-300">
         {items.map((item, index) => (
           <li key={index} className="flex gap-2">
-            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-current opacity-70" />
+            <span aria-hidden="true" className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-current opacity-70" />
             <span>{renderInline(item)}</span>
           </li>
         ))}
@@ -137,7 +137,7 @@ export function ConceptDetailPage({ sectionSlug, concepts }: Props) {
 
   return (
     <article className="space-y-8">
-      <nav className="text-sm">
+      <nav aria-label="Concept breadcrumb" className="text-sm">
         <Link to={`/${sectionSlug}`} className="text-emerald-400 hover:underline">
           ← All concepts
         </Link>
@@ -171,7 +171,7 @@ export function ConceptDetailPage({ sectionSlug, concepts }: Props) {
             {concept.keyPoints.map((kp, i) => (
               <li key={i} className="flex gap-3">
                 <span className="text-emerald-400">▸</span>
-                <span>{kp}</span>
+                <span>{renderInline(kp)}</span>
               </li>
             ))}
           </ul>
@@ -234,7 +234,7 @@ export function ConceptDetailPage({ sectionSlug, concepts }: Props) {
         </section>
       )}
 
-      <nav className="flex items-center justify-between gap-3 border-t border-slate-800 pt-6">
+      <nav aria-label="Concept pagination" className="flex items-center justify-between gap-3 border-t border-slate-800 pt-6">
         {prev ? (
           <Link
             to={`/${sectionSlug}/${prev.slug}`}
