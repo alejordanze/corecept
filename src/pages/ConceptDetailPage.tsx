@@ -121,7 +121,7 @@ export function ConceptDetailPage({ sectionSlug, concepts }: Props) {
   if (!concept) {
     return (
       <div className="rounded-xl border border-slate-800 bg-slate-900/60 p-6 text-slate-300">
-        <p>Concept not found.</p>
+        <p role="status">Concept not found.</p>
         <Link
           to={`/${sectionSlug}`}
           className="mt-3 inline-block text-sm text-emerald-400 hover:underline"
