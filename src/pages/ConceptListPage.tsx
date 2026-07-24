@@ -13,9 +13,9 @@ export function ConceptListPage({ sectionSlug, title, tagline, concepts }: Props
 
   return (
     <div className="space-y-6">
-      <header>
+      <header aria-labelledby="section-title">
         <p className="text-xs font-semibold uppercase text-emerald-400">Section</p>
-        <h1 className="mt-1 text-3xl font-bold text-white sm:text-4xl">{title}</h1>
+        <h1 id="section-title" className="mt-1 text-3xl font-bold text-white sm:text-4xl">{title}</h1>
         <div className="mt-2 flex flex-wrap items-center gap-3">
           <p className="max-w-2xl text-slate-300">{tagline}</p>
             <span aria-label={conceptCount} className="rounded-full border border-slate-700 px-2.5 py-1 text-xs font-medium text-slate-400">
