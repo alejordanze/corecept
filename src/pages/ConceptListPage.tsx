@@ -18,7 +18,7 @@ export function ConceptListPage({ sectionSlug, title, tagline, concepts }: Props
         <h1 className="mt-1 text-3xl font-bold text-white sm:text-4xl">{title}</h1>
         <div className="mt-2 flex flex-wrap items-center gap-3">
           <p className="max-w-2xl text-slate-300">{tagline}</p>
-          <span className="rounded-full border border-slate-700 px-2.5 py-1 text-xs font-medium text-slate-400">
+            <span aria-label={conceptCount} className="rounded-full border border-slate-700 px-2.5 py-1 text-xs font-medium text-slate-400">
             {conceptCount}
           </span>
         </div>
