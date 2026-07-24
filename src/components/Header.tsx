@@ -21,7 +21,7 @@ export function Header() {
           </span>
         </NavLink>
 
-        <nav aria-label="Main navigation" className="flex flex-wrap items-center gap-1 text-sm">
+        <nav aria-label="Main navigation" className="flex max-w-[70%] flex-wrap justify-end gap-1 text-sm">
           {links.map((l) => (
             <NavLink
               key={l.to}
