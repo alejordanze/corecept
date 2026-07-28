@@ -11,6 +11,7 @@ npm run dev
 ```
 
 `npm run build` runs the TypeScript check and creates the production bundle.
+Use `npm run typecheck` for a faster type-only feedback loop.
 
 ## Included sections
 
