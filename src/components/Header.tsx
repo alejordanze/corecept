@@ -13,7 +13,7 @@ export function Header() {
     <header className="sticky top-0 z-30 border-b border-slate-800 bg-slate-950/85 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
         <NavLink to="/" className="group flex items-center gap-2">
-          <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-emerald-400 to-sky-500 text-slate-950 font-bold">
+          <span aria-hidden="true" className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-emerald-400 to-sky-500 text-slate-950 font-bold">
             {'{}'}
           </span>
           <span className="text-sm font-semibold text-slate-100 group-hover:text-white">
