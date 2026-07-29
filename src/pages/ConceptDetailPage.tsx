@@ -223,7 +223,7 @@ export function ConceptDetailPage({ sectionSlug, concepts }: Props) {
                 <a
                   href={r.url}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="text-emerald-400 hover:underline"
                 >
                   {r.label} ↗
