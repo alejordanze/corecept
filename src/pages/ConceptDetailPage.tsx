@@ -238,7 +238,7 @@ export function ConceptDetailPage({ sectionSlug, concepts }: Props) {
         {prev ? (
           <Link
             to={`/${sectionSlug}/${prev.slug}`}
-            className="flex-1 rounded-lg border border-slate-800 bg-slate-900/60 p-3 text-sm hover:border-slate-600"
+            className="flex-1 rounded-lg border border-slate-800 bg-slate-900/60 p-3 text-sm hover:border-slate-600 focus:outline-none focus:ring-2 focus:ring-emerald-400"
           >
             <span className="block text-xs text-slate-500">← Previous</span>
             <span className="mt-0.5 block font-medium text-slate-100">{prev.title}</span>
@@ -249,7 +249,7 @@ export function ConceptDetailPage({ sectionSlug, concepts }: Props) {
         {next ? (
           <Link
             to={`/${sectionSlug}/${next.slug}`}
-            className="flex-1 rounded-lg border border-slate-800 bg-slate-900/60 p-3 text-right text-sm hover:border-slate-600"
+            className="flex-1 rounded-lg border border-slate-800 bg-slate-900/60 p-3 text-right text-sm hover:border-slate-600 focus:outline-none focus:ring-2 focus:ring-emerald-400"
           >
             <span className="block text-xs text-slate-500">Next →</span>
             <span className="mt-0.5 block font-medium text-slate-100">{next.title}</span>
