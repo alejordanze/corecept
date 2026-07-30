@@ -148,7 +148,8 @@ export function ConceptDetailPage({ sectionSlug, concepts }: Props) {
         <p className="mt-2 max-w-2xl text-slate-300">{concept.summary}</p>
       </header>
 
-      <section className="max-w-none space-y-4 leading-relaxed text-slate-200">
+      <section aria-labelledby="explanation-heading" className="max-w-none space-y-4 leading-relaxed text-slate-200">
+        <h2 id="explanation-heading" className="sr-only">Explanation</h2>
         {getExplanationBlocks(concept.explanation).map((block, i) =>
           block.kind === 'paragraph' ? (
             <p key={i}>{renderInline(block.text)}</p>
