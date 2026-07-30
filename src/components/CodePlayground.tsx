@@ -71,7 +71,7 @@ export function CodePlayground({ initialCode, language, hint }: CodePlaygroundPr
         </div>
       </div>
 
-      <div className="h-72 bg-[#1e1e1e]">
+      <div aria-label="Editable exercise code" className="h-72 bg-[#1e1e1e]">
         <Suspense
           fallback={
             <div className="flex h-full items-center justify-center text-sm text-slate-500">
