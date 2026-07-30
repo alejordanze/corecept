@@ -81,6 +81,7 @@ export function CodePlayground({ initialCode, language, hint }: CodePlaygroundPr
         >
           <Editor
             height="100%"
+            aria-label="Exercise code editor"
             defaultLanguage={monacoLang}
             language={monacoLang}
             theme="vs-dark"
