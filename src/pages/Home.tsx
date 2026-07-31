@@ -90,7 +90,7 @@ export function Home() {
               </h3>
               <p className="mt-2 text-sm text-slate-300">{s.desc}</p>
               <span className="mt-4 inline-block text-xs font-medium text-slate-200 group-hover:text-white">
-                {s.concepts.length} concepts
+                {s.concepts.length} {s.concepts.length === 1 ? 'concept' : 'concepts'}
               </span>
             </Link>
           ))}
