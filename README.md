@@ -19,3 +19,6 @@ Use `npm run typecheck` for a faster type-only feedback loop.
 - Maintainability principles and common design patterns
 - Architecture patterns
 - Editable exercises with JavaScript and TypeScript execution
+
+Exercises execute in the browser and are intended for small learning examples,
+not production code or untrusted workloads.
