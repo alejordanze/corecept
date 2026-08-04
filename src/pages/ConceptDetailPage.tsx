@@ -143,8 +143,8 @@ export function ConceptDetailPage({ sectionSlug, concepts }: Props) {
         </Link>
       </nav>
 
-      <header>
-        <h1 className="text-3xl font-bold text-white sm:text-4xl">{concept.title}</h1>
+      <header aria-labelledby="concept-title">
+        <h1 id="concept-title" className="text-3xl font-bold text-white sm:text-4xl">{concept.title}</h1>
         <p className="mt-2 max-w-2xl text-slate-300">{concept.summary}</p>
       </header>
 
