@@ -12,10 +12,10 @@ export interface Concept {
   title: string
   summary: string
   explanation: string
-  keyPoints?: string[]
-  useCases?: string[]
-  commonMistakes?: string[]
-  tryIt?: string[]
+  keyPoints?: readonly string[]
+  useCases?: readonly string[]
+  commonMistakes?: readonly string[]
+  tryIt?: readonly string[]
   exercise?: ExerciseBlock
   references?: { label: string; url: string }[]
 }
