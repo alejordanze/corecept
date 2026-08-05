@@ -110,7 +110,9 @@ export function CodePlayground({ initialCode, language, hint }: CodePlaygroundPr
                   timer cap hit
                 </span>
               )}
-              <span>{result.durationMs.toFixed(1)}ms</span>
+              <span aria-label={`Execution time ${result.durationMs.toFixed(1)} milliseconds`}>
+                {result.durationMs.toFixed(1)}ms
+              </span>
             </span>
           )}
         </div>
