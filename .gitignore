@@ -8,3 +8,4 @@ dist-ssr
 .idea
 *.log
 *.tsbuildinfo
+.firebaserc
