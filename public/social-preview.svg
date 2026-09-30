@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="627" viewBox="0 0 1200 627">
+  <defs>
+    <linearGradient id="mark" x2="1" y2="1">
+      <stop stop-color="#00d492" />
+      <stop offset="1" stop-color="#00a6f4" />
+    </linearGradient>
+    <linearGradient id="glow" x1="1" x2="0">
+      <stop stop-color="#064e3b" stop-opacity=".45" />
+      <stop offset="1" stop-color="#020618" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="627" fill="#020618" />
+  <rect x="500" width="700" height="627" fill="url(#glow)" />
+
+  <rect x="72" y="62" width="70" height="70" rx="16" fill="url(#mark)" />
+  <text x="83" y="111" fill="#020618" font-family="Arial, sans-serif" font-size="42" font-weight="700">{}</text>
+  <text x="161" y="112" fill="#f8fafc" font-family="Arial, sans-serif" font-size="43" font-weight="700">Corecept</text>
+
+  <text x="72" y="237" fill="#f8fafc" font-family="Arial, sans-serif" font-size="53" font-weight="700">Review the concepts.</text>
+  <text x="72" y="305" fill="#5eead4" font-family="Arial, sans-serif" font-size="53" font-weight="700">Run the code.</text>
+  <text x="74" y="384" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="26">A hands-on space for JavaScript</text>
+  <text x="74" y="419" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="26">and TypeScript.</text>
+
+  <rect x="72" y="507" width="164" height="49" rx="24" fill="#134e4a" />
+  <text x="95" y="539" fill="#99f6e4" font-family="Arial, sans-serif" font-size="20" font-weight="700">50 topics</text>
+  <rect x="250" y="507" width="223" height="49" rx="24" fill="#172554" />
+  <text x="272" y="539" fill="#bae6fd" font-family="Arial, sans-serif" font-size="20" font-weight="700">Editable examples</text>
+
+  <rect x="738" y="151" width="390" height="342" rx="22" fill="#0f172a" stroke="#334155" stroke-width="2" />
+  <path d="M760 152h346a21 21 0 0 1 21 21v34H739v-34a21 21 0 0 1 21-21Z" fill="#1e293b" />
+  <circle cx="771" cy="179" r="6" fill="#fb7185" />
+  <circle cx="795" cy="179" r="6" fill="#fbbf24" />
+  <circle cx="819" cy="179" r="6" fill="#34d399" />
+  <text x="875" y="186" fill="#94a3b8" font-family="Menlo, Consolas, monospace" font-size="18">example.ts</text>
+
+  <g font-family="Menlo, Consolas, monospace" font-size="21">
+    <text x="764" y="259"><tspan fill="#7dd3fc">const</tspan><tspan fill="#f8fafc"> learn</tspan><tspan fill="#cbd5e1"> = (idea) =&gt; {</tspan></text>
+    <text x="796" y="309" fill="#99f6e4">read(idea)</text>
+    <text x="796" y="359" fill="#99f6e4">edit(example)</text>
+    <text x="796" y="409" fill="#fde68a">return run()</text>
+    <text x="764" y="459" fill="#cbd5e1">}</text>
+  </g>
+</svg>
