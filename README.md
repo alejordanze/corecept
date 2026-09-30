@@ -1,4 +1,4 @@
-# Concepts Review
+# Corecept
 
 A hands-on refresher for JavaScript, TypeScript, and the ideas used to design
 maintainable software. The project began as a personal way to review core and

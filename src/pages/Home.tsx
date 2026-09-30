@@ -48,7 +48,7 @@ export function Home() {
     <div className="space-y-12">
       <section className="pt-6">
         <p className="mb-3 text-sm font-medium uppercase text-emerald-400">
-          Concepts Review
+          Corecept
         </p>
         <h1 className="max-w-3xl text-4xl font-bold leading-tight text-white sm:text-5xl">
           A hands-on space to review JavaScript &amp; TypeScript concepts.

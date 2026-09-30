@@ -17,7 +17,7 @@ export function Header() {
             {'{}'}
           </span>
           <span className="text-sm font-semibold text-slate-100 group-hover:text-white">
-            Concepts Review
+            Corecept
           </span>
         </NavLink>
 

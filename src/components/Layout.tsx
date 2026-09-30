@@ -21,8 +21,38 @@ export function Layout() {
       <main id="main-content" className="mx-auto w-full max-w-6xl flex-1 px-4 py-8 sm:px-6">
         <Outlet />
       </main>
-      <footer className="border-t border-slate-800 bg-slate-950/60 px-4 py-6 text-center text-xs text-slate-500">
-        Built for interview prep and day-to-day learning · JS &amp; TS concepts
+      <footer className="border-t border-slate-800 bg-slate-950/60 px-4 py-6 text-xs text-slate-400 sm:px-6">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 text-center sm:flex-row sm:justify-between">
+          <p>
+            Made with <span role="img" aria-label="love" className="text-emerald-400">♥</span> by{' '}
+            <a
+              href="https://alejordan.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-slate-200 underline decoration-slate-600 underline-offset-4 hover:text-emerald-400 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
+            >
+              Alejandro Jordan
+            </a>
+          </p>
+          <nav aria-label="Social links" className="flex items-center gap-5">
+            <a
+              href="https://github.com/alejordanze"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-emerald-400 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/alejordanze/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-emerald-400 focus-visible:rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-400"
+            >
+              LinkedIn
+            </a>
+          </nav>
+        </div>
       </footer>
     </div>
   )
