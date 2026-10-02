@@ -12,6 +12,9 @@ export interface Concept {
   title: string
   summary: string
   explanation: string
+  level?: 'Basics' | 'Intermediate' | 'Advanced'
+  example?: { language: 'jsx' | 'tsx'; code: string }
+  reviewQuestions?: readonly string[]
   keyPoints?: readonly string[]
   useCases?: readonly string[]
   commonMistakes?: readonly string[]
