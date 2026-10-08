@@ -4,6 +4,7 @@ import { architecturePatterns } from '../data/architecturePatterns'
 import { basicConcepts } from '../data/basic'
 import { designPatterns } from '../data/designPatterns'
 import { principles } from '../data/principles'
+import { reactConcepts } from '../data/react'
 
 const sections = [
   {
@@ -19,6 +20,13 @@ const sections = [
     desc: 'Event loop, promises, cancellation, generators, memoization, TypeScript types.',
     concepts: advancedConcepts,
     tint: 'from-sky-500/20 to-sky-500/5 border-sky-500/30',
+  },
+  {
+    to: '/react',
+    title: 'React',
+    desc: 'Components, hooks, state, rendering, Fiber, and performance.',
+    concepts: reactConcepts,
+    tint: 'from-cyan-500/20 to-cyan-500/5 border-cyan-500/30',
   },
   {
     to: '/principles',
@@ -51,12 +59,13 @@ export function Home() {
           Corecept
         </p>
         <h1 className="max-w-3xl text-4xl font-bold leading-tight text-white sm:text-5xl">
-          A hands-on space to review JavaScript &amp; TypeScript concepts.
+          A hands-on space to review JavaScript, TypeScript &amp; React concepts.
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-slate-300">
           Whether you are prepping for an interview or brushing up on ideas you use every day,
-          each concept here comes with a plain-English explanation and an editable, runnable
-          exercise. No setup, no distractions — just read, tweak, and run.
+          each concept here comes with a plain-English explanation and review material.
+          React topics include study questions and many have JSX examples; JavaScript and
+          TypeScript topics include editable exercises.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link
@@ -70,6 +79,12 @@ export function Home() {
             className="rounded-lg border border-slate-700 px-4 py-2 text-sm font-semibold text-slate-200 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-emerald-400"
           >
             Jump to Advanced
+          </Link>
+          <Link
+            to="/react"
+            className="rounded-lg border border-cyan-700 px-4 py-2 text-sm font-semibold text-cyan-100 hover:bg-cyan-950/60 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+          >
+            Explore React
           </Link>
         </div>
       </section>
@@ -99,7 +114,7 @@ export function Home() {
 
       <section className="rounded-xl border border-slate-800 bg-slate-900/50 p-6">
         <h2 className="text-lg font-semibold text-white">Recommended review path</h2>
-        <ol className="mt-3 grid gap-3 text-sm text-slate-300 sm:grid-cols-3">
+        <ol className="mt-3 grid gap-3 text-sm text-slate-300 sm:grid-cols-2 lg:grid-cols-4">
           <li>
             <span className="block font-semibold text-slate-100">1. Runtime basics</span>
             Start with scope, hoisting, closures, references, and{' '}
@@ -115,6 +130,10 @@ export function Home() {
           <li>
             <span className="block font-semibold text-slate-100">3. Design judgment</span>
             Compare principles, patterns, and architecture choices against the code examples.
+          </li>
+          <li>
+            <span className="block font-semibold text-slate-100">4. React</span>
+            Build from components and state through hooks, rendering, and advanced architecture.
           </li>
         </ol>
       </section>
