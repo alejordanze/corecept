@@ -1,17 +1,18 @@
 # Corecept
 
-A hands-on refresher for JavaScript, TypeScript, and the ideas used to design
+A hands-on refresher for JavaScript, TypeScript, React, and the ideas used to design
 maintainable software. The project began as a personal way to review core and
 advanced topics without jumping between many sources; it is shared here as a
 compact learning resource for other developers too.
 
-Each topic combines a plain-language explanation with an editable exercise, so
-you can read an idea, change the example, and see what the code does. Further
-reading links are included where available.
+Each topic combines a plain-language explanation with review material. JavaScript
+and TypeScript topics include editable exercises; React topics include study
+questions and, where useful, JSX or TSX examples. Further reading links are
+included where available.
 
 ## What you can review
 
-The app currently includes 50 topics across five sections:
+The app includes 82 topics across six sections:
 
 - **Basic JavaScript (12):** hoisting, scope, closures, references and mutation,
   pure functions, callbacks, IIFEs, higher-order functions, `this`, prototypes,
@@ -19,6 +20,11 @@ The app currently includes 50 topics across five sections:
 - **Advanced JavaScript and TypeScript (12):** the event loop, promises,
   `async`/`await`, cancellation, generators, currying, debounce and throttle,
   memoization, proxies, and TypeScript types.
+- **React (32):** components, JSX, props, state, hooks, effects, Context, HOCs,
+  virtual DOM, Fiber, performance, state management, Suspense, hydration, and
+  advanced application design. Topics are grouped as Basics, Intermediate, and
+  Advanced. The section draws its progression and review prompts from the
+  supplied *React and JavaScript Complete Study Guide* PDF.
 - **Principles (10):** SOLID, separation of concerns, DRY, KISS, YAGNI, and
   composition over inheritance.
 - **Design patterns (10):** Factory, Builder, Observer, Strategy, Decorator,
@@ -33,8 +39,10 @@ and references in addition to the explanation and exercise.
 
 1. Choose a section and open a topic.
 2. Read the explanation and note the key points or common mistakes.
-3. Edit the JavaScript or TypeScript exercise and select **Run** to inspect its
-   output. Use **Reset** to restore the original example.
+3. On JavaScript and TypeScript topics, edit the exercise and select **Run** to
+   inspect its output. Use **Reset** to restore the original example. On React
+   topics, study the JSX or TSX snippet and answer the review questions in a
+   React project; these snippets are displayed as reference code.
 4. Follow the references when you want a deeper treatment.
 
 ## Run locally
