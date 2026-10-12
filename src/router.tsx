@@ -8,6 +8,7 @@ import { advancedConcepts } from './data/advanced'
 import { principles } from './data/principles'
 import { designPatterns } from './data/designPatterns'
 import { architecturePatterns } from './data/architecturePatterns'
+import { reactConcepts } from './data/react'
 
 export const sections = [
   {
@@ -21,6 +22,12 @@ export const sections = [
     title: 'Advanced Concepts',
     tagline: 'Deeper JS/TS topics you meet in real production code.',
     concepts: advancedConcepts,
+  },
+  {
+    slug: 'react',
+    title: 'React',
+    tagline: 'From components and state to rendering, architecture, and performance.',
+    concepts: reactConcepts,
   },
   {
     slug: 'principles',

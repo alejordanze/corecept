@@ -144,6 +144,7 @@ export function ConceptDetailPage({ sectionSlug, concepts }: Props) {
       </nav>
 
       <header aria-labelledby="concept-title">
+        {concept.level && <p className="mb-2 text-xs font-semibold uppercase text-emerald-400">{concept.level}</p>}
         <h1 id="concept-title" className="text-3xl font-bold text-white sm:text-4xl">{concept.title}</h1>
         <p className="mt-2 max-w-2xl text-slate-300">{concept.summary}</p>
       </header>
@@ -162,6 +163,26 @@ export function ConceptDetailPage({ sectionSlug, concepts }: Props) {
           ),
         )}
       </section>
+
+      {concept.example && (
+        <section className="space-y-3" aria-labelledby="example-heading">
+          <h2 id="example-heading" className="text-lg font-semibold text-white">Example</h2>
+          <div className="overflow-hidden rounded-xl border border-slate-800 bg-[#1e1e1e]">
+            <div className="border-b border-slate-800 px-4 py-2 text-xs uppercase text-slate-400">{concept.example.language}</div>
+            <pre className="overflow-x-auto p-4 text-sm leading-relaxed text-slate-200"><code>{concept.example.code}</code></pre>
+          </div>
+          <p className="text-xs text-slate-400">Illustrative snippet for a React project; it does not run in this page.</p>
+        </section>
+      )}
+
+      {concept.reviewQuestions && concept.reviewQuestions.length > 0 && (
+        <section className="rounded-xl border border-slate-800 bg-slate-900/60 p-5">
+          <h2 className="text-sm font-semibold uppercase text-slate-400">Check your understanding</h2>
+          <ol className="mt-3 list-decimal space-y-2 pl-5 text-slate-200 marker:text-emerald-400">
+            {concept.reviewQuestions.map((question) => <li key={question}>{question}</li>)}
+          </ol>
+        </section>
+      )}
 
       {concept.keyPoints && concept.keyPoints.length > 0 && (
         <section className="rounded-xl border border-slate-800 bg-slate-900/60 p-5">

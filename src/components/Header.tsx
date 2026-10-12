@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 const links = [
   { to: '/basic', label: 'Basic' },
   { to: '/advanced', label: 'Advanced' },
+  { to: '/react', label: 'React' },
   { to: '/principles', label: 'Principles' },
   { to: '/design-patterns', label: 'Design Patterns' },
   { to: '/architecture-patterns', label: 'Architecture' },
